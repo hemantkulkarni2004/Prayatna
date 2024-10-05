@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JWST Collage</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .abc{
+            align-items: center;
+            align-content: center ;
+            position: cover;
+            width: 100%;
+            height: 705px;
+            border: 0; 
+        }
+        #overlayText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: bold;
+            z-index: 1; /* Place the text on top of the iframe */
+        }
+        #titleText {
+            position: absolute; /* Add absolute positioning */
+            top: 12px; /* Adjust top position as needed */
+            left: 10px; /* Move the text to the left side */
+            color: #f8f7f6; /* Set the text color to a goldish color */
+            font-weight: bold;
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+           /* text-shadow: 0px 0px 10px #FFD700, 0px 0px 20px #FFD700, 0px 0px 30px #FFD700; /* Add a text shadow effect with multiple layers */
+            font-family: 'Orbitron', sans-serif; /* Use the Orbitron font */
+            z-index: 1; /* Ensure the text is on top of the iframe */
+        }
+        #overlayButton {
+            position: absolute; /* Add absolute positioning */
+            top: 12px; /* Adjust top position as needed */
+            right: 9px; /* Move the button to the right side */
+            padding: 17px 40px;
+            border-radius: 50px;
+            cursor: pointer;
+            border: 0;
+            background-color: white;
+            box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all 0.5s ease;
+            z-index: 1; /* Ensure the button is on top of the iframe */
+        }
+        #overlayButton:hover {
+            letter-spacing: 3px;
+            background-color: #FFD700;
+            color: hsl(0, 0%, 100%);
+            box-shadow: rgb(255, 255, 32) 0px 7px 29px 0px;
+        }
+        #overlayButton:active {
+            letter-spacing: 3px;
+            background-color: hsl(65, 86%, 62%);
+            color: hsl(0, 0%, 100%);
+            box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+            transform: translateY(10px);
+            transition: 100ms;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap" rel="stylesheet"> <!-- Import the Orbitron font -->
+</head>
+<body>
+    <div class="sketchfab-embed-wrapper"> 
+        <!--3d Model credit :https://sketchfab.com/paul_sketch -->
+        <iframe style="text-align:center;" class="abc" title="JWST (james webb space telescope)" frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/6c92c08a672640afb58ee44d248fd0fe/embed?autostart=1&annotations_visible=0&preload=1&ui_animations=0&ui_infos=0&ui_stop=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_ar=0&ui_help=0&ui_settings=0&ui_vr=0&ui_fullscreen=0&ui_annotations=0">
+        </iframe>
+        <div id="titleText">JSWT TELESCOPE</div>
+        
+        <button id="overlayButton"  onclick="redirectToNextPage()">Click Me</button>
+
+        <script>
+            function redirectToNextPage() {
+                window.location.href ="file:///C:/Users/Dell/Desktop/nasa%20hakethon/page2.html"; // Replace with your desired URL
+            }
+        </script>
+    </div>
+</body>
+</html>
